@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .wrapper.mt-20
+    h1= title
+    div.card
+      div.card-header
+        h4 Products
+      div
+        if products 
+          each product, i in products 
+            h1=product.name

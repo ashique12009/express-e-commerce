@@ -3,6 +3,19 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongo = require('mongodb');
+var mongoose = require('mongoose');
+
+// DB connection 
+// mongoose.connect('mongodb://localhost:27017/express_e_ecommerce');
+// const db = mongoose.connection;
+// db.on('error', (err) => {
+//     console.log(err);
+// });
+
+// db.once('open', () => {
+//     console.log('Database connected!');
+// });
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
