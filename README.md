@@ -1,2 +1,2 @@
-# express_e_commerce
+# ExpressJS e-commerce application with MongoDB
 An e-commerce site with expressJS and mongoDB
